@@ -28,7 +28,8 @@ shinyUI(fluidPage(
       h3("Predicted Consumption from Model 3 (consumption ~ transmission + weight + transmission*weight):"),
       textOutput("pred3"),
       h3("Predicted Consumption from Model 4 (consumption ~ weight^2):"),
-      textOutput("pred4")
+      textOutput("pred4"),
+      h5("I hope you like the app! If you want to see the code, feel free to visit my github repo: https://github.com/VSablin/shiny_app_code")
     )
   )
 ))

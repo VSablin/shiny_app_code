@@ -77,12 +77,6 @@ shinyServer(function(input, output) {
       print(gw)
     }
 
-    # gw <- gw + geom_point(aes(x=wtInput, y=model1pred()), colour="green",size=5,shape=15)
-    # gw <- gw + geom_point(aes(x=wtInput, y=model2pred()), colour="black",size=5,shape=15)
-    # gw <- gw + geom_point(aes(x=wtInput, y=model3pred()), colour="magenta",size=5,shape=15)
-    # gw <- gw + geom_point(aes(x=wtInput, y=model4pred()), colour="orange",size=5,shape=15)
-    # 
-    # print(gw)
   })
   
   output$pred1 <- renderText({paste(as.character(model1pred()),"mpg",collapse = " ")
